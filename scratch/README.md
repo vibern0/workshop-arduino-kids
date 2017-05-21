@@ -1,3 +1,3 @@
-# workshop-arduino-kids
+# Scratch
 
 Códigos em scratch. Exemplos. Sketches.

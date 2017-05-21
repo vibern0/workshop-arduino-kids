@@ -42,51 +42,40 @@ Obrigado a quem fez o almoço hoje.
 Bem-vindos!
 
 \section{Programção}
-
-\subsection{Introdução}
-Bem-vindos!
-
-\section{Arduino}
+% onde é usada
+% o que é possivel fazer
+% os primeiros metodos (um pouco de historia)
+% a primeira programadora (Ada) (um pouco de historia)
 
 \subsection{Controlo}
-O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.
 
-\subsubsection{espere}
-\begin{tabular}{ c c }
-    \includegraphics{imgs/controlers/espere} & delay(1000) \\
-\end{tabular}
+O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.\newline
+
+Essas condições são boleanas, o que significa que apenas são verdadeiras ou falsas.
+Normalmente são do tipo \textit{"se (x for verdade) faz (ação y)"} isto se apenas quisermos realizar uma determinada ação quando uma determinada condição for verdade. Se o objetivo for realizar também uma ação quando essa condição for falsa então deve ser algo como \textit{"se (x for verdade) faz (ação y) senão faz (ação z)"}.\newline
+
+Mas existe ainda um "senão se" que é usado quando a primeira condição não é verdade mas só se pretende execução a segunda ação dependendo de uma nova condição. Seria algo como \textit{"se (x for verdade) faz (ação y) senão se (h for verdade) faz (ação z)"}. \newline \\
+\textbf{Nota}: ver na cheatsheet as instruções para Controlo.
 
 \subsection{Operadores}
 Os operadores efetuam uma determinada ação que normalmente são realizadas por duas "coisas" do mesmo tipo, ou seja, entre dois numeros ou entre duas (ou mais) letras. Exemplos de operadores são as somas ou subtrações. Por outro lado existem também operadores que são condições como o maior ">" ou menor "<" ou quando é pretendido que duas condições se verifiquem em simultâneo, e então usa-se o operador "e".
 
-
-\begin{tabular}{ c c }
-    \multicolumn{2}{c}{\LARGE{somar}} \\
-    \includegraphics{imgs/operators/plus} & x + y \\ \\
-    \multicolumn{2}{c}{\LARGE{subtrair}} \\
-    \includegraphics{imgs/operators/minus} & x - y \\ \\
-    \multicolumn{2}{c}{\LARGE{multiplicar}} \\
-    \includegraphics{imgs/operators/multiply} & x * y \\ \\
-    \multicolumn{2}{c}{\LARGE{dividir}} \\
-    \includegraphics{imgs/operators/divide} & x / y \\ \\
-    \multicolumn{2}{c}{\LARGE{aleatório}} \\
-    \includegraphics{imgs/operators/random-between} & 1 + rand() \% 10 \\ \\
-\end{tabular}
-
 \subsection{Variáveis}
 As variáveis servem exencialmente para guardar dados durante a execução de um programa.
 
-\subsection{Mais arduino}
-%outras coisas que o arduino tem que o scratch nao tem
+\section{Arduino}
+
+\section{Mais arduino}
+% outras coisas que o arduino tem que o scratch nao tem
 
 \subsection{Módulos}
-%os módulos mais conhecidos
+% os módulos mais conhecidos
 
-\subsection{Links úteis}
+\section{Links úteis}
 %
 
-\subsection{Exemplos}
-%exemplos em scartch e traduzidos para c
+\section{Exemplos}
+% exemplos em scartch e traduzidos para c
 
 
 

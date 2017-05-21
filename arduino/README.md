@@ -1,3 +1,9 @@
-# workshop-arduino-kids
+# Arduino
 
-Códigos de arduino em C e esquemas.
+
+
+* Bernardo
+  * LCD
+  * WiFi
+  * Cartoẽs SD ( não testado )
+  * Radio Frequência ( não testado )
