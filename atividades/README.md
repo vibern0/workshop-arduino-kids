@@ -18,3 +18,4 @@
 * ( Livre )
   * Grua ( Controlado pleo PC )
   * Piano
+  * Elevador
