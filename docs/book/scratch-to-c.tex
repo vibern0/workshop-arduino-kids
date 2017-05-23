@@ -1,38 +1,57 @@
 \documentclass{article}
-%code
 \usepackage{listings}
-%images
 \usepackage{graphicx}
-%quotes
 \usepackage{csquotes}
-%encoding
 %--------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 %--------------------------------------
- 
 %Portuguese-specific commands
 %--------------------------------------
 \usepackage[portuguese]{babel}
 %--------------------------------------
- 
 %Hyphenation rules
 %--------------------------------------
 \usepackage{hyphenat}
 \hyphenation{mate-mática recu-perar}
 %--------------------------------------
 \usepackage{makeidx}
+\usepackage[svgnames]{xcolor} % Required to specify font color
+\newcommand*{\plogo}{\fbox{$\mathcal{ED}$}} % Generic publisher logo
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\rotrt}[1]{\rotatebox{90}{#1}} % Command to rotate right 90 degrees
+\newcommand*{\rotlft}[1]{\rotatebox{-90}{#1}} % Command to rotate left 90 degrees
+
+\newcommand*{\titleBC}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+
+\def\CP{\textit{\Huge Manual de instruções}} % Title
+
+\settowidth{\unitlength}{\CP} % Set the width of the curly brackets to the width of the title
+{\color{LightGoldenrod}\resizebox*{\unitlength}{\baselineskip}{\rotrt{$\}$}}} \\[\baselineskip] % Print top curly bracket
+\textcolor{Sienna}{\CP} \\[\baselineskip] % Print title
+{\color{RosyBrown}\Large COM EXEMPLOS E ILUSTRAÇÕES} \\ % Tagline or further description
+{\color{LightGoldenrod}\resizebox*{\unitlength}{\baselineskip}{\rotlft{$\}$}}} % Print bottom curly bracket
+
+\vfill % Whitespace between the title and the author name
+
+{\Large\textbf{Grupo xy}}\\ % Author name
+
+\vfill % Whitespace between the author name and the publisher logo
+
+\plogo\\[0.5\baselineskip] % Publisher logo
+2017 % Year published
+
+\endgroup}
+
 
 \begin{document}
 
-\title{No mundo da eletrónica e programação}
-\author{Ética e Deontologia - Grupo xf}
-
-\maketitle
-
-\begin{abstract}
-Obrigado a quem fez o almoço hoje.
-\end{abstract}
+\pagestyle{empty} % Removes page numbers
+\titleBC % This command includes the title page
 
 \pagebreak
 \tableofcontents
@@ -48,7 +67,6 @@ Bem-vindos!
 % a primeira programadora (Ada) (um pouco de historia)
 
 \subsection{Controlo}
-
 O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.\newline
 
 Essas condições são boleanas, o que significa que apenas são verdadeiras ou falsas.
@@ -64,26 +82,39 @@ Os operadores efetuam uma determinada ação que normalmente são realizadas por
 As variáveis servem exencialmente para guardar dados durante a execução de um programa.
 
 \section{Scratch}
+O scratch é uma plataforma que tem como principal objetivo permitir que pessoas sem qualquer experiencia possam programar. Foi publicado em 2007 sobre a licenca do MIT sendo de livre uso.\newline
+Comparativamente á programação utilizado no desenvolvimento de software, o conceito é o mesmo, no entanto as instruções são diferentes.
 % o que é
 % comparação com programacao a sério
+% TODO fotos
 
 \section{Arduino}
 O arduino é um plataforma de hardware livre que foi projetada com o objetivo de se poder criar prototipos mais rápidamente e mais facilmente. O arduino funciona com linguagem de programação C, e para além disso tem os seu proprios métodos para controlar a entrada e saida de dados da placa, fazendo um tratamento de dados digital e analógico, de forma a facilitar a referida prototipagem.\newline \\
 O arduino tornou-se muito famoso por ser fácil de usar mesmo para quem tem muito pouca experiência com programação e mais experiência com eletrónica ou vice-versa, por isso mesmo chegou em especial ao mercado de entusiastas.\newline \\
 O arduino provocou também um enorme impulso na cultura maker, pois se até então era necessário ter bons conhecimentos de eletronica e de programação, a partir desse momento tudo se tornou muito mais fácil.\newline \\
-%
+% TODO fotos aqui
 
 \section{Mais arduino}
 % outras coisas que o arduino tem que o scratch nao tem
 
 \subsection{Módulos}
+Os módulos são um conjunto de componentes já conectados numa placa, desenvolvidos com um determinado objetivo. Exemplos de módulos são :
+\begin{enumerate}
+\item WiFi
+\item GPS
+\item GPRS
+\end{enumerate}
+% TODO fotos aqui
 % os módulos mais conhecidos
 
 \section{Movimento Maker}
-% 
+O \textit{movimento maker} é uma ideia que tem atraido cada vez mais pessoas. Existem páginas online, grupos nas redes sociais, cada vez mais pessoas tem aderido. Essa aderencia deve-se ao facto de o arduino ter facilitado muito a prototipagem e por isso, os primeiros interessados foram os programadores, que já com conhecimento de programação, quiseram explorar um pouco o mundo de eletronica, mecatronica, robotica, etc.\newline
+Á medida que mais pessoas se foram juntados, houve mais pessoas a partilhar os seus trabalhos e cada vez trona-se mais fácil encontrar exemplos e fazer algo.
+% TODO fotos
 
 \subsection{Maker Faire Lisboa}
-%
+Com tanta aderencia a este movimento começaram a surgir eventos. Um deles é a \textit{Maker Fair Lisboa} que junta centenas de pessoas todos os anos. É possivel encontrar todos os tipos de projetos DIY (\textit{Do it Yourself} - Faça você mesmo) nas mais variadas áreas, desde projetos ligados ao ambiente até projetos desenvolvidos apenas por diversão.
+% TODO fotos
 
 \section{Links úteis}
 % arduino
@@ -91,7 +122,7 @@ O arduino provocou também um enorme impulso na cultura maker, pois se até ent�
 % link para testes (Pedro)
 
 \section{Exemplos}
-% exemplos em scratch e traduzidos para c
+% TODO exemplos em scratch e traduzidos para c
 
 \section{Conclusão}
 Conclusão aqui.
