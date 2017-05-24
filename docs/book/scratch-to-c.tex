@@ -58,13 +58,37 @@
 \pagebreak
 
 \section{Introdução}
-Bem-vindos!
+Este "manual" serve apenas como um complemento á apresentação e deve ser utilizado juntamente com a cheatsheet. O principal objetivo é dar a conhecer um pouco mais a programação, o arduino e tudo o que se passa em volta disto.
 
 \section{Programação}
-% onde é usada
-% o que é possivel fazer
-% os primeiros metodos (um pouco de historia)
-% a primeira programadora (Ada) (um pouco de historia)
+A programção é utilizada em praticamente tudo á nossa volta, desde programas para computador, aplicações para smartphones, páginas de internet, robôs, entre muitas outras coisas.\newline
+Existem várias linguagens diferentes com vários objetivos diferentes. Umas mais rápidas que outras, umas mais leves que outras e todas com formas de se escrever diferente.\newline
+Em programação, o primeiro exemplo de código que toda a gente az é o \textit{"Olá mundo!"}. Aqui ficam alguns exemplos em algumas linguagens diferentes:\newline
+Exemplo em C:
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+  puts("Hello World!");
+  return EXIT_SUCCESS;
+}
+\end{lstlisting}
+Exemplo em Java:
+\begin{lstlisting}[language=Java]
+class HelloWorld {
+  static public void main( String args[] ) {
+    System.out.println( "Hello World!" );
+  }
+}
+\end{lstlisting}
+Exemplo em Elixir:
+\begin{lstlisting}[language=erlang]
+defmodule HelloWorld do
+  IO.puts "Hello, World!"
+end
+\end{lstlisting}
 
 \subsection{Controlo}
 O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.\newline
@@ -74,12 +98,15 @@ Normalmente são do tipo \textit{"se (x for verdade) faz (ação y)"} isto se ap
 
 Mas existe ainda um "senão se" que é usado quando a primeira condição não é verdade mas só se pretende execução a segunda ação dependendo de uma nova condição. Seria algo como \textit{"se (x for verdade) faz (ação y) senão se (h for verdade) faz (ação z)"}. \newline \\
 \textbf{Nota}: ver na cheatsheet as instruções para Controlo. \\
+% TODO exemplo de if's
 
 \subsection{Operadores}
 Os operadores efetuam uma determinada ação que normalmente são realizadas por duas "coisas" do mesmo tipo, ou seja, entre dois numeros ou entre duas (ou mais) letras. Exemplos de operadores são as somas ou subtrações. Por outro lado existem também operadores que são condições como o maior ">" ou menor "<" ou quando é pretendido que duas condições se verifiquem em simultâneo, e então usa-se o operador "e".
+% TODO exemplo de operadores
 
 \subsection{Variáveis}
-As variáveis servem exencialmente para guardar dados durante a execução de um programa.
+As variáveis servem exencialmente para guardar dados durante a execução de um programa. Esses dados podem ser guardados e utilizados apenas durante um curto espaço de tempo ou durante toda a execução da aplicação.
+% TODO exemplo de variaveis
 
 \section{Scratch}
 O scratch é uma plataforma que tem como principal objetivo permitir que pessoas sem qualquer experiencia possam programar. Foi publicado em 2007 sobre a licenca do MIT sendo de livre uso.\newline
