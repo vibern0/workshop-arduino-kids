@@ -2,6 +2,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
 %--------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -136,6 +137,7 @@ Comparativamente á programação utilizado no desenvolvimento de software, o co
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{img/scratch}
+\caption{Scratch}
 \end{figure}
 
 \section{Arduino}
@@ -146,10 +148,11 @@ O arduino provocou também um enorme impulso na cultura maker, pois se até ent�
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{img/arduino}
+\caption{Diferentes modelos de arduino}
 \end{figure}
 
 \section{Mais arduino}
-% outras coisas que o arduino tem que o scratch nao tem
+Mas o arduino é muito mais que uma simples placa que permite por um LED  piscar. O arduino é uma placa com um microcontrolador, programável, e por isso as opções são ilimitadas. Desde um pequenino carro que evita obstáculos até sistemas que controlam a segurança de edifícios inteiros, utilizando câmeras de vigilância e com sensores de impressões digitais. Ou estufas totalmente autónomas em que a rega depende da humidade do terreno e do ar e depende também do pH da água. Poderia até utilizar-se um sistema de inteligência artificial que ia aprendendo de acordo com o tratamento que fazia, comparando com os resultados. As opções são infinitas.
 
 \subsection{Módulos}
 Os módulos são um conjunto de componentes já conectados numa placa, desenvolvidos com um determinado objetivo. Exemplos de módulos são :
@@ -157,12 +160,19 @@ Os módulos são um conjunto de componentes já conectados numa placa, desenvolv
 \item WiFi
 \item GPS
 \item GPRS
+\item RFID
 \end{enumerate}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.65\textwidth]{img/shields}
+\caption{Módulos}
 \end{figure}
+
+\subsection{Datasheets}
+Como é que sabemos as propriedas de um determinado objeto que queremos comprar? Se precisamos de soldar um componente mas não soubermos que temperatura é que ele suporta (demasiado calor poder danificar parcialmente ou totalmente o componente), ou se precisarmos de saber mais sobre esse componente.\newline \\
+Os datasheets contêm toda essa informação. Normalmente são feitos por quem desenvolve o componente e neles deve haver informação suficiente para que qualquer pessoa que compre esse componente, encontre as respostas às suas dúvidas no respetivo datasheet.\newline \\
+Um exemplo de um datasheet pode ser encontrado em \url{http://www.midondesign.com/Documents/LM78L05.PDF}, que corresponde a um regulador de tensão.
 
 \section{Movimento Maker}
 O \textit{movimento maker} é uma ideia que tem atraido cada vez mais pessoas. Existem páginas online, grupos nas redes sociais, cada vez mais pessoas tem aderido. Essa aderencia deve-se ao facto de o arduino ter facilitado muito a prototipagem e por isso, os primeiros interessados foram os programadores, que já com conhecimento de programação, quiseram explorar um pouco o mundo de eletronica, mecatronica, robotica, etc.\newline
@@ -171,6 +181,7 @@ O \textit{movimento maker} é uma ideia que tem atraido cada vez mais pessoas. E
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/makers}
+\caption{Movimento maker}
 \end{figure}
 
 \subsection{Maker Faire Lisboa}
@@ -179,15 +190,15 @@ Com tanta aderencia a este movimento começaram a surgir eventos. Um deles é a 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{img/mflisboa}
+\caption{Maker Faire Lisboa}
 \end{figure}
 
 \section{Links úteis}
-https://www.arduino.cc/\newline
-https://www.arduino.cc/en/Reference/HomePage\newline
-https://www.arduino.cc/en/Tutorial/HomePage\newline
-\vspace{2em}
-https://www.adafruit.com/\newline
-https://learn.adafruit.com/\newline \\
+\url{https://www.arduino.cc/}\newline
+\url{https://www.arduino.cc/en/Reference/HomePage}\newline
+\url{https://www.arduino.cc/en/Tutorial/HomePage}\newline\newline
+\url{https://www.adafruit.com/}\newline
+\url{https://learn.adafruit.com/}\newline
 
 % link para testes (Pedro)
 
