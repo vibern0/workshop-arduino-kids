@@ -1,4 +1,4 @@
-\documentclass{article}
+﻿\documentclass{article}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{csquotes}
@@ -98,28 +98,44 @@ Normalmente são do tipo \textit{"se (x for verdade) faz (ação y)"} isto se ap
 
 Mas existe ainda um "senão se" que é usado quando a primeira condição não é verdade mas só se pretende execução a segunda ação dependendo de uma nova condição. Seria algo como \textit{"se (x for verdade) faz (ação y) senão se (h for verdade) faz (ação z)"}. \newline \\
 \textbf{Nota}: ver na cheatsheet as instruções para Controlo. \\
-% TODO exemplo de if's
+\begin{lstlisting}[language=Java]
+if(x == 0) {
+  y = 3;
+}
+\end{lstlisting}
 
 \subsection{Operadores}
 Os operadores efetuam uma determinada ação que normalmente são realizadas por duas "coisas" do mesmo tipo, ou seja, entre dois numeros ou entre duas (ou mais) letras. Exemplos de operadores são as somas ou subtrações. Por outro lado existem também operadores que são condições como o maior ">" ou menor "<" ou quando é pretendido que duas condições se verifiquem em simultâneo, e então usa-se o operador "e".
-% TODO exemplo de operadores
+\begin{lstlisting}[language=Java]
+if(x > 10) {
+  terminar();
+}
+\end{lstlisting}
+
+% TODO imagem yoda
 
 \subsection{Variáveis}
 As variáveis servem exencialmente para guardar dados durante a execução de um programa. Esses dados podem ser guardados e utilizados apenas durante um curto espaço de tempo ou durante toda a execução da aplicação.
-% TODO exemplo de variaveis
+\begin{lstlisting}[language=Java]
+int x = 0;
+
+// faz coisas ...
+
+if(x > 10) {
+  terminar();
+}
+\end{lstlisting}
 
 \section{Scratch}
 O scratch é uma plataforma que tem como principal objetivo permitir que pessoas sem qualquer experiencia possam programar. Foi publicado em 2007 sobre a licenca do MIT sendo de livre uso.\newline
 Comparativamente á programação utilizado no desenvolvimento de software, o conceito é o mesmo, no entanto as instruções são diferentes.
-% o que é
-% comparação com programacao a sério
-% TODO fotos
+% TODO imagem scratch
 
 \section{Arduino}
 O arduino é um plataforma de hardware livre que foi projetada com o objetivo de se poder criar prototipos mais rápidamente e mais facilmente. O arduino funciona com linguagem de programação C, e para além disso tem os seu proprios métodos para controlar a entrada e saida de dados da placa, fazendo um tratamento de dados digital e analógico, de forma a facilitar a referida prototipagem.\newline \\
 O arduino tornou-se muito famoso por ser fácil de usar mesmo para quem tem muito pouca experiência com programação e mais experiência com eletrónica ou vice-versa, por isso mesmo chegou em especial ao mercado de entusiastas.\newline \\
 O arduino provocou também um enorme impulso na cultura maker, pois se até então era necessário ter bons conhecimentos de eletronica e de programação, a partir desse momento tudo se tornou muito mais fácil.\newline \\
-% TODO fotos aqui
+% TODO imagem arduino
 
 \section{Mais arduino}
 % outras coisas que o arduino tem que o scratch nao tem
@@ -131,27 +147,32 @@ Os módulos são um conjunto de componentes já conectados numa placa, desenvolv
 \item GPS
 \item GPRS
 \end{enumerate}
-% TODO fotos aqui
-% os módulos mais conhecidos
+% TODO imagem shields
 
 \section{Movimento Maker}
 O \textit{movimento maker} é uma ideia que tem atraido cada vez mais pessoas. Existem páginas online, grupos nas redes sociais, cada vez mais pessoas tem aderido. Essa aderencia deve-se ao facto de o arduino ter facilitado muito a prototipagem e por isso, os primeiros interessados foram os programadores, que já com conhecimento de programação, quiseram explorar um pouco o mundo de eletronica, mecatronica, robotica, etc.\newline
 Á medida que mais pessoas se foram juntados, houve mais pessoas a partilhar os seus trabalhos e cada vez trona-se mais fácil encontrar exemplos e fazer algo.
-% TODO fotos
+% TODO imagem makers
 
 \subsection{Maker Faire Lisboa}
 Com tanta aderencia a este movimento começaram a surgir eventos. Um deles é a \textit{Maker Fair Lisboa} que junta centenas de pessoas todos os anos. É possivel encontrar todos os tipos de projetos DIY (\textit{Do it Yourself} - Faça você mesmo) nas mais variadas áreas, desde projetos ligados ao ambiente até projetos desenvolvidos apenas por diversão.
-% TODO fotos
+% TODO imagem mflisboa
 
 \section{Links úteis}
-% arduino
-% adafruit
+https://www.arduino.cc/
+https://www.arduino.cc/en/Reference/HomePage
+https://www.arduino.cc/en/Tutorial/HomePage
+
+https://www.adafruit.com/
+https://learn.adafruit.com/
+
 % link para testes (Pedro)
 
 \section{Exemplos}
 % TODO exemplos em scratch e traduzidos para c
 
 \section{Conclusão}
-Conclusão aqui.
+Esperamos que tenham gostado deste workshop, tenham aprendido coisas novas e acima de tudo, que se tenham divertido.
+Se quiserem obter mais informações contactem a nossa página fb.me/arduinosolidario
 
 \end{document}
