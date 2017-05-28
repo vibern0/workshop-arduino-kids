@@ -1,4 +1,4 @@
-﻿\documentclass{article}
+\documentclass{article}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{csquotes}
@@ -61,9 +61,9 @@
 Este "manual" serve apenas como um complemento á apresentação e deve ser utilizado juntamente com a cheatsheet. O principal objetivo é dar a conhecer um pouco mais a programação, o arduino e tudo o que se passa em volta disto.
 
 \section{Programação}
-A programção é utilizada em praticamente tudo á nossa volta, desde programas para computador, aplicações para smartphones, páginas de internet, robôs, entre muitas outras coisas.\newline
+A programção é utilizada em praticamente tudo á nossa volta, desde programas para computador, aplicações para smartphones, páginas de internet, robôs, entre muitas outras coisas.\newline \\
 Existem várias linguagens diferentes com vários objetivos diferentes. Umas mais rápidas que outras, umas mais leves que outras e todas com formas de se escrever diferente.\newline
-Em programação, o primeiro exemplo de código que toda a gente az é o \textit{"Olá mundo!"}. Aqui ficam alguns exemplos em algumas linguagens diferentes:\newline
+Em programação, o primeiro exemplo de código que toda a gente az é o \textit{"Olá mundo!"}. Aqui ficam alguns exemplos em algumas linguagens diferentes:\newline \\
 Exemplo em C:
 \begin{lstlisting}[language=C]
 #include <stdio.h>
@@ -75,6 +75,7 @@ int main(void)
   return EXIT_SUCCESS;
 }
 \end{lstlisting}
+\vspace{1em}
 Exemplo em Java:
 \begin{lstlisting}[language=Java]
 class HelloWorld {
@@ -83,6 +84,7 @@ class HelloWorld {
   }
 }
 \end{lstlisting}
+\vspace{1em}
 Exemplo em Elixir:
 \begin{lstlisting}[language=erlang]
 defmodule HelloWorld do
@@ -91,11 +93,9 @@ end
 \end{lstlisting}
 
 \subsection{Controlo}
-O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.\newline
-
+O controlo baseia-se em condições de acesso que desencadeiam determinadas ações, como por exemplo só quando estiver a pressionar o botão, vai abrir as cortinas da sala, no entanto se tiver a pressionar esse botão não vai iniciar o processo, vai simplesmente deixar que este continue a decorrer. Se eventualmente o botão deixar de ser pressionado então é necessário parar.\newline \\
 Essas condições são boleanas, o que significa que apenas são verdadeiras ou falsas.
-Normalmente são do tipo \textit{"se (x for verdade) faz (ação y)"} isto se apenas quisermos realizar uma determinada ação quando uma determinada condição for verdade. Se o objetivo for realizar também uma ação quando essa condição for falsa então deve ser algo como \textit{"se (x for verdade) faz (ação y) senão faz (ação z)"}.\newline
-
+Normalmente são do tipo \textit{"se (x for verdade) faz (ação y)"} isto se apenas quisermos realizar uma determinada ação quando uma determinada condição for verdade. Se o objetivo for realizar também uma ação quando essa condição for falsa então deve ser algo como \textit{"se (x for verdade) faz (ação y) senão faz (ação z)"}.\newline \\
 Mas existe ainda um "senão se" que é usado quando a primeira condição não é verdade mas só se pretende execução a segunda ação dependendo de uma nova condição. Seria algo como \textit{"se (x for verdade) faz (ação y) senão se (h for verdade) faz (ação z)"}. \newline \\
 \textbf{Nota}: ver na cheatsheet as instruções para Controlo. \\
 \begin{lstlisting}[language=Java]
@@ -112,7 +112,10 @@ if(x > 10) {
 }
 \end{lstlisting}
 
-% TODO imagem yoda
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img/yoda}
+\end{figure}
 
 \subsection{Variáveis}
 As variáveis servem exencialmente para guardar dados durante a execução de um programa. Esses dados podem ser guardados e utilizados apenas durante um curto espaço de tempo ou durante toda a execução da aplicação.
@@ -129,13 +132,21 @@ if(x > 10) {
 \section{Scratch}
 O scratch é uma plataforma que tem como principal objetivo permitir que pessoas sem qualquer experiencia possam programar. Foi publicado em 2007 sobre a licenca do MIT sendo de livre uso.\newline
 Comparativamente á programação utilizado no desenvolvimento de software, o conceito é o mesmo, no entanto as instruções são diferentes.
-% TODO imagem scratch
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img/scratch}
+\end{figure}
 
 \section{Arduino}
 O arduino é um plataforma de hardware livre que foi projetada com o objetivo de se poder criar prototipos mais rápidamente e mais facilmente. O arduino funciona com linguagem de programação C, e para além disso tem os seu proprios métodos para controlar a entrada e saida de dados da placa, fazendo um tratamento de dados digital e analógico, de forma a facilitar a referida prototipagem.\newline \\
 O arduino tornou-se muito famoso por ser fácil de usar mesmo para quem tem muito pouca experiência com programação e mais experiência com eletrónica ou vice-versa, por isso mesmo chegou em especial ao mercado de entusiastas.\newline \\
 O arduino provocou também um enorme impulso na cultura maker, pois se até então era necessário ter bons conhecimentos de eletronica e de programação, a partir desse momento tudo se tornou muito mais fácil.\newline \\
-% TODO imagem arduino
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img/arduino}
+\end{figure}
 
 \section{Mais arduino}
 % outras coisas que o arduino tem que o scratch nao tem
@@ -147,24 +158,36 @@ Os módulos são um conjunto de componentes já conectados numa placa, desenvolv
 \item GPS
 \item GPRS
 \end{enumerate}
-% TODO imagem shields
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.65\textwidth]{img/shields}
+\end{figure}
 
 \section{Movimento Maker}
 O \textit{movimento maker} é uma ideia que tem atraido cada vez mais pessoas. Existem páginas online, grupos nas redes sociais, cada vez mais pessoas tem aderido. Essa aderencia deve-se ao facto de o arduino ter facilitado muito a prototipagem e por isso, os primeiros interessados foram os programadores, que já com conhecimento de programação, quiseram explorar um pouco o mundo de eletronica, mecatronica, robotica, etc.\newline
 Á medida que mais pessoas se foram juntados, houve mais pessoas a partilhar os seus trabalhos e cada vez trona-se mais fácil encontrar exemplos e fazer algo.
-% TODO imagem makers
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/makers}
+\end{figure}
 
 \subsection{Maker Faire Lisboa}
 Com tanta aderencia a este movimento começaram a surgir eventos. Um deles é a \textit{Maker Fair Lisboa} que junta centenas de pessoas todos os anos. É possivel encontrar todos os tipos de projetos DIY (\textit{Do it Yourself} - Faça você mesmo) nas mais variadas áreas, desde projetos ligados ao ambiente até projetos desenvolvidos apenas por diversão.
-% TODO imagem mflisboa
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{img/mflisboa}
+\end{figure}
 
 \section{Links úteis}
-https://www.arduino.cc/
-https://www.arduino.cc/en/Reference/HomePage
-https://www.arduino.cc/en/Tutorial/HomePage
-
-https://www.adafruit.com/
-https://learn.adafruit.com/
+https://www.arduino.cc/\newline
+https://www.arduino.cc/en/Reference/HomePage\newline
+https://www.arduino.cc/en/Tutorial/HomePage\newline
+\vspace{2em}
+https://www.adafruit.com/\newline
+https://learn.adafruit.com/\newline \\
 
 % link para testes (Pedro)
 
