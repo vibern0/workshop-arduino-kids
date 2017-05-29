@@ -14,7 +14,7 @@
    * Operadores
    * Variavéis
 2. Exemplos
-3. Breve apresentação ( Arduino & Sratch ): (Pedro & André)
+3. Breve apresentação ( Arduino & Sratch ): (Pedro & André & Gustavo)
    * Movimento	
    * Aparência
    * Som
