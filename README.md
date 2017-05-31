@@ -19,5 +19,5 @@ PLANO:
 * Atividades (arduino)
 * Entender dos datasheets
 * Soldar
+* Apresentação de projetos avançados
 * Questões do publico (como se faria determinada coisa?)
-* RC
